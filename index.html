@@ -18,33 +18,45 @@ window.onload = function() {
   </video>
 
   <div id="content">
-    <div id="flag-alliance">
-      <img src="assets/alliance.png"/>
-    </div>
-    <div id="progress">
-      <div id="title">
-        <h1>Vientos</h1>
-        <h1>de</h1>
-        <h1>Guerra</h1>
+    <div class="side left">
+      <div id="flag-alliance">
+        <img src="assets/alliance.png"/>
       </div>
-      <img class="loading-side" src="assets/bar-left.png"/>
-      <img id="progress-center" src="assets/bar-center-2.png"/>
-      <img class="loading-side" src="assets/bar-right.png"/>
     </div>
-    <div id="flag-horde">
-      <img src="assets/horde.png"/>
+    <div class="side central">
+      <div class="row">
+        <div id="title">
+          <h1>Vientos</h1>
+          <h1>de</h1>
+          <h1>Guerra</h1>
+        </div>
+        <div class="progess-bar">
+          <div class="boton-frame">
+            <img src="assets/boton-frame.svg">
+          </div>
+          <div class="boton-text">
+            18 DE ENERO ¡CONQUISTA LAS TIERRAS ALTAS!
+          </div>
+          <div class="flux">
+            <div class="wrapper">
+              <div class="waves">
+                <img src="assets/flux.png"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="side right">
+      <div id="flag-horde">
+        <img src="assets/horde.png"/>
+      </div>
     </div>
   </div>
 
   <audio id="player" autoplay>
     <source src="assets/bgmusic.ogg" type="audio/ogg">
   </audio>
-
-  <!--div class="content">
-    <h1>Heading</h1>
-    <p>Lorem ipsum...</p>
-    <button id="myBtn" onclick="myFunction()">Pause</button>
-  </div-->
 
   <script src="script.js" charset="utf-8"></script>
 </body>

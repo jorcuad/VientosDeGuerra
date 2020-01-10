@@ -1,28 +1,17 @@
-/* Style the video: 100% width and height to cover the entire window */
-body {
-  background-color: black;
-}
-
 @font-face {
   font-family: Warcraft;
   src: url(fonts/LifeCraft_Font.ttf);
 }
 
-#title {
-  font-family: Warcraft;
-  font-size: 8vh;
-  color: black;
-  float: left;
-  width: 100%;
-  text-align: center;
-  margin-left: -10%;
-  margin-top: -5%;
-  padding-bottom: 5%;
+@font-face {
+  font-family: WarcraftWeb;
+  src: url(fonts/FrizQuadrataRegular.ttf);
 }
 
-#title h1 {
-  margin: 0;
-  padding: 0;
+body {
+  background-color: black;
+  font-family: WarcraftWeb;
+  color: white;
 }
 
 #myVideo2 {
@@ -45,83 +34,131 @@ body {
  min-height:  100%;
 }
 
-/* Add some content at the bottom of the video/page */
-.content {
- position: fixed;
- bottom: 0;
- background: rgba(0, 0, 0, 0.5);
- color: #f1f1f1;
- width: 100%;
- padding: 20px;
-}
-
 #content {
   position: fixed;
   height: 100%;
   width: 100%;
+  top: 0px;
+  display: inline-flex;
+}
+
+.side {
+  position: relative;
+  display: table-row;
+  width: 33%;
+  overflow: hidden;
+}
+
+.side.central {
+  text-align: center;
+  height: 100%;
+}
+
+.side.central .row {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.side.central #title {
+  position: relative;
+  color: black;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.side.central #title h1 {
+  margin: 0;
+  padding: 0;
+  font-family: Warcraft;
+  font-size: 6em;
+}
+
+
+.progress-bar {
+  overflow: hidden;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.boton-frame, .boton-text {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+
+.boton-text {
+  padding-top: 4.8%;
+  font-size: 1vw;
+  font-weight: bold;
+}
+
+.boton-frame img{
+  width: 100%;
+}
+
+.flux {
+  position: relative;
+  padding-top: 2.5%;
+}
+
+.flux img {
+  width: 89%;
+}
+
+.waves {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    animation: animatedImage 8s linear infinite;
+}
+
+.waves img {
+  height: 100%;
+  width: 200%;
+}
+
+.flux .wrapper {
+  width: 88%;
+  margin-left: 6%;
+  overflow: hidden;
+}
+
+@keyframes animatedImage {
+    0% { left: 0%;}
+   100% { left: -99%;}
 }
 
 #flag-alliance {
   height: 100%;
-  width: 40%;
-  display: inline-block;
+  width: 100%;
+  position: relative;
 }
 
 #flag-alliance img {
   position: absolute;
   top: 0;
   height: 100%;
-  margin-left: -22%;
-}
-
-#progress {
-  position: absolute;
-  top: 25%;
-  right: 22%;
-  z-index: 2;
-  height: 100%;
-  width: 50%;
-  display: inline-block;
-}
-
-#progress img {
-  display: inline-block;
-  float: left;
-}
-
-#progress-center {
-  width: 2.5%;
-}
-
-.loading-side{
-  width: 40%;
+  margin-left: -50%;
 }
 
 #flag-horde {
   height: 100%;
-  width: 40%;
-  display: inline-block;
+  width: 100%;
+  position: relative;
 }
 
 #flag-horde img {
   position: absolute;
   top: 0;
   height: 100%;
-  margin-left: 30%;
-}
-
-/* Style the button used to pause/play the video */
-#myBtn {
- width: 200px;
- font-size: 18px;
- padding: 10px;
- border: none;
- background: #000;
- color: #fff;
- cursor: pointer;
-}
-
-#myBtn:hover {
- background: #ddd;
- color: black;
+  margin-right: -50%;
 }
