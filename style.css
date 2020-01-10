@@ -196,7 +196,19 @@ body {
     visibility: hidden;
   }
 
-  #goblin {
-    visibility: visible;
+  .side.central {
+    width: 75%;
+  }
+
+  #myVideo2 {
+    width: 400%;
+  }
+
+  .side.central #title h1 {
+    font-size: 16vw;
+  }
+
+  .boton-text {
+    font-size: 1.6vw;
   }
 }
