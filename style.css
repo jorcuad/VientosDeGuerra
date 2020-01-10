@@ -197,7 +197,7 @@ body {
   }
 
   .side.central {
-    width: 75%;
+    width:  200%;
   }
 
   #myVideo2 {
@@ -209,6 +209,6 @@ body {
   }
 
   .boton-text {
-    font-size: 1.6vw;
+    font-size: 2.4vw;
   }
 }
