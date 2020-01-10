@@ -13,8 +13,9 @@ window.onload = function() {
 </head>
 
 <body id="musiclistener">
-  <video autoplay muted loop id="bgVideo">
-    <source src="assets/bg2.webm" type="video/mp4">
+  <video autoplay loop muted playsinline id="bgVideo">
+    <source src="assets/bg2.webm" type="video/mp4" onerror="fallback(parentNode)">
+    <img src="assets/bg-image.png">
   </video>
 
   <div id="content">
