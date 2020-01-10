@@ -149,6 +149,7 @@ body {
   top: 0;
   height: 100%;
   margin-left: -50%;
+  float: left;
 }
 
 #flag-horde {
@@ -192,7 +193,8 @@ body {
   font-size: 1vw;
 }
 
-@media (max-width: 1000px) {
+@mediaonly screen and (device-width: 1000px),
+       only screen and (max-width: 1000px) {
   .side.left, .side.right {
     visibility: hidden;
   }
