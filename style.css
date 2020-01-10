@@ -162,3 +162,31 @@ body {
   height: 100%;
   margin-right: -50%;
 }
+
+#goblin, #dialog, #dialog-text {
+  position: absolute;
+  bottom: 10px;
+  height: 25%;
+}
+
+#goblin {
+  z-index: 3;
+  right: 15%;
+  height: 30%;
+}
+
+#dialog {
+  width: 90%;
+  height: 10%;
+  z-index: 4;
+}
+
+#dialog-text {
+  width: 75%;
+  height: 10%;
+  z-index: 5;
+  margin-bottom: -6%;
+  color: black;
+  padding-left: 10%;
+  font-size: 1vw;
+}
