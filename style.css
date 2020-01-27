@@ -100,6 +100,7 @@ body {
   padding-top: 4.8%;
   font-size: 1vw;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .boton-frame img{
@@ -165,32 +166,103 @@ body {
   margin-right: -50%;
 }
 
-#goblin, #dialog, #dialog-text {
+#missions {
   position: absolute;
-  bottom: 10px;
+  z-index: 5;
+  width: 95%;
+  height: 75%;
+  margin-top: -125%;
+  margin-left: 12px;
+
+  background: #1c1c1c;
+  border-radius: 5px;
+  box-shadow: 0 0 0 6px #F5EAC8, 0 0 0 12px #251C00;
+  color: #F5EAC8;
+  font-family: Arial;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  text-transform: uppercase;
+  word-spacing: 3px;
+
+  overflow: hidden;
+}
+
+#missions #map{
+  height: 100%;
+  width: 250%;
+}
+
+.mission-text {
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  z-index: 6;
+  padding-left: 2%;
+
+  margin: 0;
+  padding: 0;
+  font-family: WarcraftWeb;
+  font-size: 1.5vw;
+
+  text-align: center;
+}
+
+.text-container {
+  height: 75%;
+}
+
+.text-container p {
+  font-size: 0.8vw;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.text-container h3 {
+  font-size: 1vw;
+}
+
+#bartender {
   height: 25%;
 }
 
 #goblin {
-  z-index: 3;
-  right: 15%;
-  height: 30%;
+  position: absolute;
+  z-index:7;
+  right: 0;
+  height: 50%;
+  bottom: -10%;
 }
 
 #dialog {
-  width: 90%;
-  height: 10%;
-  z-index: 4;
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  z-index: 8;
+  bottom: -5%;
+  left: 0;
 }
 
 #dialog-text {
-  width: 75%;
-  height: 10%;
-  z-index: 5;
+  position: absolute;
+  height: 100%;
+  z-index: 9;
   margin-bottom: -6%;
   color: black;
   padding-left: 10%;
-  font-size: 1vw;
+  padding-top: 14%;
+  font-size: 0.8vw;
+  left: 0;
+}
+
+.fall {
+  animation: chainfall 1.5s linear forwards;
+}
+
+@keyframes chainfall
+{
+  from { top: 0px;}
+  to { top: 100%;}
 }
 
 @media all and (max-device-width:1025px),
