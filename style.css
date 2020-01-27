@@ -291,6 +291,14 @@ body {
     margin-top: -220%;
   }
 
+  .text-container p {
+    font-size: 0.6vw;
+  }
+
+  .text-container h3 {
+    font-size: 1vw;
+  }
+
   @keyframes chainfall
   {
     from { top: 0px;}
