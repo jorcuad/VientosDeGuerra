@@ -292,11 +292,11 @@ body {
   }
 
   .text-container p {
-    font-size: 0.6vw;
+    font-size: 0.6em;
   }
 
   .text-container h3 {
-    font-size: 1vw;
+    font-size: 1em;
   }
 
   @keyframes chainfall
