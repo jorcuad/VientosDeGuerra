@@ -286,4 +286,14 @@ body {
   .boton-text {
     font-size: 2.4vw;
   }
+
+  #missions {
+    margin-top: -220%;
+  }
+
+  @keyframes chainfall
+  {
+    from { top: 0px;}
+    to { top: 90%;}
+  }
 }
