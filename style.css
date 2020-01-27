@@ -294,6 +294,6 @@ body {
   @keyframes chainfall
   {
     from { top: 0px;}
-    to { top: 100%;}
+    to { top: 150%;}
   }
 }
