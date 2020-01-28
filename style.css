@@ -248,6 +248,7 @@ body {
 
 #bartender {
   height: 25%;
+  visibility: hidden;
   opacity: 0%;
 }
 
@@ -294,6 +295,7 @@ body {
 }
 
 .show {
+  visibility: visible;
   opacity: 100% !important;
   transition: visibility 0s 1s, opacity 1s linear;
 }
