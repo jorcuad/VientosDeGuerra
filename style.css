@@ -342,7 +342,8 @@ body {
 
   #dialog-text {
     font-size: 3vw;
-    bottom: 5%
+    bottom: 5%;
+    padding-left: 7%;
   }
 
   @keyframes chainfall
