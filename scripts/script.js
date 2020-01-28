@@ -12,6 +12,11 @@ function fallback(video)
 }
 
 function playmusic() {
+  document.getElementById("bartender").classList.add("show");
+  document.getElementById("goblin").classList.add("show");
+  document.getElementById("dialog-text").classList.add("show");
+  document.getElementById("dialog").classList.add("show");
+
   var chain = document.getElementById("chain");
   chain.play();
   var audio = document.getElementById("player");
@@ -24,6 +29,12 @@ function playmusic() {
   },1200);
 
   setTimeout(function(){
-    document.getElementById("bartender").style.display = "none";
+    document.getElementById("goblin").classList.remove("show");
+    document.getElementById("dialog-text").classList.remove("show");
+    document.getElementById("dialog").classList.remove("show");
+    document.getElementById("goblin").classList.add("hidden");
+    document.getElementById("dialog-text").classList.add("hidden");
+    document.getElementById("dialog").classList.add("hidden");
+
   }, 8000)
 }

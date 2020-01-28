@@ -178,11 +178,7 @@ body {
   border-radius: 5px;
   box-shadow: 0 0 0 6px #F5EAC8, 0 0 0 12px #251C00;
   color: #F5EAC8;
-  font-family: Arial;
-  font-size: 18px;
-  font-weight: bold;
   position: relative;
-  text-transform: uppercase;
   word-spacing: 3px;
 
   overflow: hidden;
@@ -195,7 +191,7 @@ body {
 
 .mission-text {
   width: 100%;
-  height: 90%;
+  height: 100%;
   position: absolute;
   z-index: 6;
   padding-left: 2%;
@@ -209,29 +205,53 @@ body {
 }
 
 .text-container {
-  height: 75%;
-}
-
-.text-container p {
-  font-size: 0.8vw;
+  height: 100%;
   padding-left: 5%;
   padding-right: 5%;
 }
 
-.text-container h3 {
+.text-container .rumors p {
+  font-size: 0.8vw;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.text-container .header h3 {
   font-size: 1vw;
+  margin-top: 0;
+  padding-top: 5%;
+  margin-bottom: 2%;
+  padding-bottom: 5%;
+  border-bottom: 1px solid #F5EAC8;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.text-container .header h1 {
+  margin-top: 0;
+  padding-top: 1%;
+  margin-bottom: 1%;
+  padding-bottom: 0;
+}
+
+.text-container .rumors{
+  height: 60%;
+  overflow-y: scroll;
 }
 
 #bartender {
   height: 25%;
+  opacity: 0%;
 }
 
 #goblin {
   position: absolute;
   z-index:7;
-  right: 0;
+  right: 2%;
   height: 50%;
-  bottom: -10%;
+  bottom: -1%;
 }
 
 #dialog {
@@ -239,20 +259,18 @@ body {
   width: 100%;
   height: 20%;
   z-index: 8;
-  bottom: -5%;
+  bottom: -1%;
   left: 0;
 }
 
 #dialog-text {
   position: absolute;
-  height: 100%;
   z-index: 9;
-  margin-bottom: -6%;
   color: black;
   padding-left: 10%;
-  padding-top: 14%;
-  font-size: 0.8vw;
+  font-size: 1vw;
   left: 0;
+  bottom: 7%
 }
 
 .fall {
@@ -263,6 +281,16 @@ body {
 {
   from { top: 0px;}
   to { top: 100%;}
+}
+
+.hidden {
+  opacity: 0 !important;
+  transition: visibility 0s 2s, opacity 2s linear;
+}
+
+.show {
+  opacity: 100% !important;
+  transition: visibility 0s 1s, opacity 1s linear;
 }
 
 @media all and (max-device-width:1025px),
@@ -289,14 +317,6 @@ body {
 
   #missions {
     margin-top: -220%;
-  }
-
-  .text-container p {
-    font-size: 8px;
-  }
-
-  .text-container h3 {
-    font-size: 12px;
   }
 
   @keyframes chainfall
