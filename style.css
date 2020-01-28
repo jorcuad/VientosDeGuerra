@@ -332,6 +332,18 @@ body {
     height: 80%;
   }
 
+  #goblin {
+    height: 45%;
+  }
+
+  #dialog {
+    height: 15%;
+  }
+
+  #dialog-text {
+    font-size: 2vw;
+  }
+
   @keyframes chainfall
   {
     from { top: 0px;}
