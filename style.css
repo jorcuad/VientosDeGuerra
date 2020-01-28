@@ -328,6 +328,10 @@ body {
     margin-bottom: 2%;
   }
 
+  .text-container .rumors{
+    height: 80%;
+  }
+
   @keyframes chainfall
   {
     from { top: 0px;}
