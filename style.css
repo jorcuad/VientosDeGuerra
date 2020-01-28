@@ -319,6 +319,15 @@ body {
     margin-top: -220%;
   }
 
+  #missions .text-container .header h1 {
+    font-size: 2vw;
+    padding-top: 5%;
+  }
+
+  #missions .text-container .rumors p {
+    margin-bottom: 2%;
+  }
+
   @keyframes chainfall
   {
     from { top: 0px;}
