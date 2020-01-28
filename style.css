@@ -218,6 +218,11 @@ body {
   text-justify: inter-word;
 }
 
+.text-container .rumors p span{
+  display: block;
+  padding-left: 5%;
+}
+
 .text-container .header h3 {
   font-size: 1vw;
   margin-top: 0;
