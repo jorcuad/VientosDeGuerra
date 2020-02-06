@@ -190,7 +190,7 @@ body {
 }
 
 #tabby-toggle_dia1, #tabby-toggle_dia2 {
-  color: #F5EAC8;
+  color: #2d1617;
 }
 
 #tabby-toggle_dia1:hover, #tabby-toggle_dia2:hover {
@@ -324,6 +324,11 @@ body {
 
   #bgVideo {
     width: 400%;
+  }
+
+  #errorBG {
+    width: 100%;
+    height: 100%;
   }
 
   .side.central #title h1 {
