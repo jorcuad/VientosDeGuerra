@@ -348,6 +348,15 @@ body {
     font-size: 2.5vw;
   }
 
+  #missions .text-container .rumors h3 {
+    margin-bottom: 5%;
+    font-size: 3vw;
+  }
+
+  #tabby-toggle_dia1, #tabby-toggle_dia2 {
+    font-size: 3vw;
+  }
+
   .text-container .rumors{
     height: 80%;
   }
