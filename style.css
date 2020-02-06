@@ -190,7 +190,7 @@ body {
 }
 
 #tabby-toggle_dia1, #tabby-toggle_dia2 {
-  color: #2d1617;
+  color: #F5EAC8;
 }
 
 #tabby-toggle_dia1:hover, #tabby-toggle_dia2:hover {
@@ -359,6 +359,7 @@ body {
 
   #tabby-toggle_dia1, #tabby-toggle_dia2 {
     font-size: 3vw;
+    color: #653c3c;
   }
 
   .text-container .rumors{
