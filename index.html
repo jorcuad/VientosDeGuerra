@@ -3,13 +3,16 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>Vientos de Guerra</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
   <link rel="stylesheet" href="style.css">
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
   			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   			  crossorigin="anonymous">
   </script>
   <script src="scripts/dialog.js" charset="utf-8"></script>
+  <link rel="stylesheet" type="text/css" href="lib/tabby/tabby-ui.min.css">
+  <script src="lib/tabby/tabby.min.js" type="text/javascript"></script>
 </head>
 <body>
   <video autoplay loop muted playsinline id="bgVideo">
@@ -29,32 +32,60 @@
           <div class="text-container">
             <div class="header">
               <h1>RUMORES DE LA TABERNA</h1>
-              <h3>¡Las noticias de hoy te dejarán de piedra!</h3>
+              <ul data-tabs>
+              	<li><a href="#dia1">25/01/2020</a></li>
+              	<li><a data-tabby-default href="#dia2">01/02/2020</a></li>
+              </ul>
             </div>
             <div class="rumors">
-              <p>
-                Se ha captado una emisión arcana que tras ser modulada por nuestros ingenieros goblin ha resultado ser un mensaje:
-                <span><i>"¿Hay alguién ahí? ¿Holaaaa? Veo... Veo... Creo que veo una luz... ¡Ah no! Es mi cristal de memoria."</i></span>
-              </p>
-              <audio id="memoria" controls>
-                  <source src="assets/memoria.mp3" type="audio/mp3">
-              </audio>
+              <div id="dia1">
+                <h3>¡Las noticias de hoy te dejarán de piedra!</h3>
+                <audio id="memoria" controls>
+                    <source src="assets/memoria.mp3" type="audio/mp3">
+                </audio>
+                <p>
+                  Se ha captado una emisión arcana que tras ser modulada por nuestros ingenieros goblin ha resultado ser un mensaje:
+                  <span><i>"¿Hay alguién ahí? ¿Holaaaa? Veo... Veo... Creo que veo una luz... ¡Ah no! Es mi cristal de memoria."</i></span>
+                </p>
 
-              <p>
-                Lee el último poema de nuestros parroquianos:
-                <span><i>"Un ogro bonachón solo se sentía,</i></span>
-                <span><i>A unos goblins siguió en busca de compañía,</i></span>
-                <span><i>Tras una cita con una granada de mortero... bueno...</i></span>
-                <span><i>Ya no siente nada."</i></span>
-              </p>
 
-              <p>
-                ¡En la taberna del basilisco frito advierten que estamos en temporada alta de petrificación! Sugieren evitar cualquier cosa  con lengua bífida o cuernos.
-              </p>
+                <p>
+                  Lee el último poema de nuestros parroquianos:
+                  <span><i>"Un ogro bonachón solo se sentía,</i></span>
+                  <span><i>A unos goblins siguió en busca de compañía,</i></span>
+                  <span><i>Tras una cita con una granada de mortero... bueno...</i></span>
+                  <span><i>Ya no siente nada."</i></span>
+                </p>
 
-              <p>
-                Ha aparecido una nueva orden de caballería, se hacen llamar la guardia del puño cerrado, el líder responde al nombre de John-Ja'h. Encontrarte con ellos no te reportará ningún beneficio.
-              </p>
+                <p>
+                  ¡En la taberna del basilisco frito advierten que estamos en temporada alta de petrificación! Sugieren evitar cualquier cosa  con lengua bífida o cuernos.
+                </p>
+
+                <p>
+                  Ha aparecido una nueva orden de caballería, se hacen llamar la guardia del puño cerrado, el líder responde al nombre de John-Ja'h. Encontrarte con ellos no te reportará ningún beneficio.
+                </p>
+              </div>
+              <div id="dia2">
+                <h3>¡Ahora con tendencias de moda!</h3>
+                <p>
+                  Trágico suceso para los amantes de la decoración y el interiorismo... Aventureros destrozan valiosa obra de arte convirtiendola en carne... Tasador local sigue llorando tras el suceso.
+                </p>
+                <p>
+                  Se han detectado casos de dopaje en Mag'Gorà, se sigue buscando a los responsables.
+                </p>
+                <p>
+                  No te pierdas nuestro suplemento de moda y buen vestir ¡Nuevas tendencias en moda dracónica! El violeta es el nuevo rojo.
+                </p>
+                <p>
+                  Hoy en <i>Gastronomía y Pubs de moda</i> nuestro crítico local nos chiva que en la taberna del basilisco frito la cerveza ha salido peleona... ¡Cuidado con la resaca!
+                </p>
+                <p>
+                  En nuestra sección <i>Aventurero Actual</i>, nuestros entrevistados se confiesan: "Necesitamos dormir un poco más..."
+                </p>
+                <p>
+                  En tendencias... ¡Suceso inesperado! La suerte de <i>El Bardo</i> se ha invertido, <i>Personaje</i> lo ha vivido en sus propias carnes y nos cuenta con todo el detalle este suceso.
+                </p>
+              </div>
             </div>
           </div>
         </div>

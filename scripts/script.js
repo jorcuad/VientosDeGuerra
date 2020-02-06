@@ -38,3 +38,5 @@ function playmusic() {
 
   }, 8000)
 }
+
+var tabs = new Tabby('[data-tabs]');
