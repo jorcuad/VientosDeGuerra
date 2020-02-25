@@ -189,11 +189,11 @@ body {
   width: 250%;
 }
 
-#tabby-toggle_dia1, #tabby-toggle_dia2 {
+#tabby-toggle_dia1, #tabby-toggle_dia2, #tabby-toggle_dia3, #tabby-toggle_dia4 {
   color: #F5EAC8;
 }
 
-#tabby-toggle_dia1:hover, #tabby-toggle_dia2:hover {
+#tabby-toggle_dia1:hover, #tabby-toggle_dia2:hover, #tabby-toggle_dia3:hover, #tabby-toggle_dia4:hover {
   color: white;
   border-color: white;
 }
@@ -357,7 +357,7 @@ body {
     font-size: 3vw;
   }
 
-  #tabby-toggle_dia1, #tabby-toggle_dia2 {
+  #tabby-toggle_dia1, #tabby-toggle_dia2, #tabby-toggle_dia3, #tabby-toggle_dia4 {
     font-size: 3vw;
     color: #653c3c;
   }
